@@ -47,6 +47,6 @@ EXPERIMENTS = {
                 'audio_file_name':'',
             }
         },
-        'experiment_stages': [['Rest', 'text_cue', 5, None], ['Cue', 'text_image_cue', 3, None], ['Action', 'text_cue', 6 , 1]]
+        'experiment_stages': [['Rest', 'text_cue', 6, None], ['Cue', 'text_image_cue', 3, None], ['Action', 'text_cue', 4 , 1]]
     }
 }

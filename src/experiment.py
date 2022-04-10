@@ -41,6 +41,10 @@ class Experiment():
         self.timer.timeout.connect(self.updateTimer)
 
         self.cue_logs = pd.DataFrame(columns=['time', 'cues'])
+
+        label_trial_counter_text = f'Trials: {len(self.completed_tasks)} of {self.n_total_trials} done'
+        self.subject_window.label_trial_counter.setText(label_trial_counter_text)
+        self.admin_window.label_trial_counter.setText(label_trial_counter_text)
         
 
 

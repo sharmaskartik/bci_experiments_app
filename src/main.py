@@ -60,10 +60,11 @@ class BCIExperimentApp(QMainWindow):
 
             self.subject_window = SubjectWindow()
             self.admin_window = AdminWindow()
+            self.admin_window.set_experiment(self)
             #check if secondary screen is connected
 
-            self.subject_window.showMaximized()
             self.admin_window.showMaximized()
+            self.subject_window.showMaximized()
 
             #put windows on different monitors
             if len(screens) > 1:
